@@ -4,8 +4,15 @@ import * as tuitsDao from '../tuits/tuits-dao.js'
 
 const createTuit = async (req, res) => {
     const newTuit = req.body;
-    newTuit.image ="nasa.png"
+    newTuit.image ="nasa.png";
     // newTuit._id = (new Date()).getTime()+'';
+    newTuit.username = "Maruko";
+    newTuit.topic = "Maruko";
+    newTuit.handle = "@maruko";
+    newTuit.time = "Just Now";
+    newTuit.title = "HAVE A VOICE";
+    newTuit.replies = 0;
+    newTuit.retuits = 0;
     newTuit.likes = 0;
     newTuit.dislikes = 0;
     newTuit.liked = false;
